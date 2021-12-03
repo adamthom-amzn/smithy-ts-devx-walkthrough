@@ -1,0 +1,22 @@
+{
+  "name": "string-service-build",
+  "version": "0.0.1",
+  "description": "A yarn project for the string service monorepo",
+  "packageManager": "yarn@3.1.1",
+  "author": "",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "build:model": "cd model && ./gradlew clean build publishToMavenLocal",
+    "build:client": "cd typescript-client && yarn build",
+    "build:server": "cd server && yarn build",
+    "build": "yarn build:model && yarn build:client && yarn build:server"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
+  },
+  "workspaces": [
+    "typescript-client",
+    "server"
+  ]
+}
