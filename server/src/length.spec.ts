@@ -1,5 +1,5 @@
 import { LengthOperation } from "./length";
-import { PalindromeExceptionError } from "@smithy-demo/string-wizard-service-ssdk";
+import { PalindromeException } from "@smithy-demo/string-wizard-service-ssdk";
 
 describe("Length tests", () => {
   const context = { user: "user123" };
@@ -19,7 +19,7 @@ describe("Length tests", () => {
     try {
       await LengthOperation({ string: "kayak" }, context);
     } catch (e) {
-      expect(e).toBeInstanceOf(PalindromeExceptionError);
+      expect(e).toBeInstanceOf(PalindromeException);
     }
   });
 });

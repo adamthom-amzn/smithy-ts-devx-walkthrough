@@ -22,12 +22,12 @@ buildscript {
     }
     dependencies {
         classpath 'software.amazon.smithy.demo:string-wizard-service-model:1.0-SNAPSHOT'
-        classpath 'software.amazon.smithy.typescript:smithy-typescript-codegen:0.8.0'
-        classpath 'software.amazon.smithy.typescript:smithy-aws-typescript-codegen:0.8.0'
-        classpath "software.amazon.smithy:smithy-model:1.14.1"
-        classpath "software.amazon.smithy:smithy-openapi:1.14.1"
-        classpath "software.amazon.smithy:smithy-aws-traits:1.14.1"
-        classpath "software.amazon.smithy:smithy-aws-apigateway-openapi:1.14.1"
+        classpath 'software.amazon.smithy.typescript:smithy-typescript-codegen:0.10.0'
+        classpath 'software.amazon.smithy.typescript:smithy-aws-typescript-codegen:0.10.0'
+        classpath "software.amazon.smithy:smithy-model:1.19.0"
+        classpath "software.amazon.smithy:smithy-openapi:1.19.0"
+        classpath "software.amazon.smithy:smithy-aws-traits:1.19.0"
+        classpath "software.amazon.smithy:smithy-aws-apigateway-openapi:1.19.0"
     }
 }
 
@@ -36,8 +36,8 @@ plugins {
 }
 
 dependencies {
-    implementation "software.amazon.smithy:smithy-aws-traits:1.14.1"
-    implementation "software.amazon.smithy:smithy-aws-apigateway-openapi:1.14.1"
+    implementation "software.amazon.smithy:smithy-aws-traits:1.19.0"
+    implementation "software.amazon.smithy:smithy-aws-apigateway-openapi:1.19.0"
     implementation "software.amazon.smithy.demo:string-wizard-service-model:1.0-SNAPSHOT"
 }
 

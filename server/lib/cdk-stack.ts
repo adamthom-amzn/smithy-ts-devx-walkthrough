@@ -37,9 +37,9 @@ export class CdkStack extends Stack {
             minify: true,
             tsconfig: path.join(__dirname, "../tsconfig.json"),
             forceDockerBundling: true,
-            // Re2 is used by the SSDK common library to do pattern validation, and uses
-            // native code, so it's included here.
-            nodeModules: ["re2"],
+            // re2-wasm is used by the SSDK common library to do pattern validation, and uses
+            // a WASM module, so it's excluded from the bundle
+            nodeModules: ["re2-wasm"],
           },
         }),
       }),

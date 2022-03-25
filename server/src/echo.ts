@@ -1,5 +1,5 @@
 import { Operation } from "@aws-smithy/server-common";
-import { EchoServerInput, EchoServerOutput, PalindromeExceptionError } from "@smithy-demo/string-wizard-service-ssdk";
+import { EchoServerInput, EchoServerOutput, PalindromeException } from "@smithy-demo/string-wizard-service-ssdk";
 import { HandlerContext } from "./apigateway";
 import { reverse } from "./util";
 
@@ -8,7 +8,7 @@ export const EchoOperation: Operation<EchoServerInput, EchoServerOutput, Handler
   console.log(`Received Echo operation from: ${context.user}`);
 
   if (input.string != undefined && input.string === reverse(input.string)) {
-    throw new PalindromeExceptionError({ message: "Cannot handle palindrome" });
+    throw new PalindromeException({ message: "Cannot handle palindrome" });
   }
 
   return {

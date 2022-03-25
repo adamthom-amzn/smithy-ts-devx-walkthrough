@@ -22,9 +22,9 @@ buildscript {
     }
     dependencies {
         classpath 'software.amazon.smithy.demo:string-wizard-service-model:1.0-SNAPSHOT'
-        classpath 'software.amazon.smithy.typescript:smithy-typescript-codegen:0.8.0'
-        classpath 'software.amazon.smithy.typescript:smithy-aws-typescript-codegen:0.8.0'
-        classpath "software.amazon.smithy:smithy-model:1.14.1"
+        classpath 'software.amazon.smithy.typescript:smithy-typescript-codegen:0.10.0'
+        classpath 'software.amazon.smithy.typescript:smithy-aws-typescript-codegen:0.10.0'
+        classpath "software.amazon.smithy:smithy-model:1.19.0"
     }
 }
 

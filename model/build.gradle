@@ -33,9 +33,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'software.amazon.smithy:smithy-model:1.14.1'
-    implementation 'software.amazon.smithy:smithy-aws-traits:1.14.1'
-    implementation 'software.amazon.smithy:smithy-validation-model:1.14.1'
+    implementation 'software.amazon.smithy:smithy-model:1.19.0'
+    implementation 'software.amazon.smithy:smithy-aws-traits:1.19.0'
+    implementation 'software.amazon.smithy:smithy-validation-model:1.19.0'
 }
 
 publishing {
